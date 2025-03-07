@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Birthday messages | firebase</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="image-container">
+        <img src="./assets/jtk logo.png" alt="image" />
+      </div>
+
+      <div class="form-container">
+        <div class="alert">
+          Your entry has been saved! Message sent to Daddy GO.
+        </div>
+        <form action="" id="birthdayForm">
+          <div class="inputBox">
+            <input type="text" id="name" placeholder="Your name..." required />
+          </div>
+
+          <div class="inputBox">
+            <input
+              type="email"
+              id="emailId"
+              placeholder="Your Email.."
+              required
+            />
+          </div>
+
+          <div class="inputBox">
+            <textarea
+              id="msgContent"
+              cols="30"
+              rows="10"
+              placeholder="Message"
+            ></textarea>
+          </div>
+
+          <div class="inputBox">
+            <button type="submit">Submit</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+    <script src="/script.js"></script>
+  </body>
+</html>
